@@ -1,0 +1,62 @@
+[
+  {
+    "id": "markers",
+    "name": "Botanical marker set",
+    "category": "Markers",
+    "priceCents": 2400,
+    "image": "/images/markers.png",
+    "alt": "Six dual-tip markers with sage, peach, lavender, and blue caps.",
+    "width": 800,
+    "height": 600
+  },
+  {
+    "id": "sketchbook",
+    "name": "Everyday sketchbook",
+    "category": "Paper",
+    "priceCents": 1800,
+    "image": "/images/sketchbook.png",
+    "alt": "A cobalt blue spiral sketchbook with cream pages and an abstract cover.",
+    "width": 800,
+    "height": 600
+  },
+  {
+    "id": "gouache",
+    "name": "Studio gouache palette",
+    "category": "Paint",
+    "priceCents": 3200,
+    "image": "/images/gouache.png",
+    "alt": "Six colorful gouache paint pans inside an open cream metal tin.",
+    "width": 800,
+    "height": 600
+  },
+  {
+    "id": "pencils",
+    "name": "Drawing pencil collection",
+    "category": "Drawing",
+    "priceCents": 1600,
+    "image": "/images/pencils.png",
+    "alt": "Five graphite pencils with terracotta, mustard, and charcoal finishes.",
+    "width": 800,
+    "height": 600
+  },
+  {
+    "id": "tape",
+    "name": "Color study washi tape",
+    "category": "Accessories",
+    "priceCents": 800,
+    "image": "/images/tape.png",
+    "alt": "Three patterned washi tape rolls in lavender, peach, and blue.",
+    "width": 800,
+    "height": 600
+  },
+  {
+    "id": "brushes",
+    "name": "Detail brush trio",
+    "category": "Tools",
+    "priceCents": 2200,
+    "image": "/images/brushes.png",
+    "alt": "Three wooden paintbrushes with copper ferrules and pointed bristles.",
+    "width": 800,
+    "height": 600
+  }
+]

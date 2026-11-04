@@ -13,7 +13,7 @@
 	--soft: #eef1e9;
 	--focus: #202b38;
 
-	/* Fonts */
+	/* Font families and weights */
 
 	--font-body: 'DejaVu Sans', sans-serif;
 	--font-heading: 'DejaVu Serif', serif;
@@ -24,18 +24,66 @@
 
 	/* Font sizes — mobile defaults */
 	--text-brand: 1.1875rem; /* 19px */
+	--text-header-caption: 0.75rem;
+	--text-eyebrow: 0.75rem;
 	--text-main-heading: 2.375rem; /* 38px */
+	--text-intro: 0.9375rem; /* 15px*/
+	--text-section-heading: 1.625rem; /* 26px*/
 	--text-product-name: 0.938rem; /* 15px */
 	--text-product-category: 0.8125rem; /* 13px */
 	--text-product-price: 1rem;
 	--text-product-btn: 0.875rem; /* 14px */
 	--text-bag-heading: 1.375rem; /* 22px */
+	--text-cart-name: 0.875rem;
+	--text-cart-detail: 0.8125rem;
+	--text-total-label: 0.875rem;
+	--text-total-amount: 1.75rem;
 	--text-dialog-heading: 2rem; /* 32px */
 	--text-note: 0.75rem; /* 12px */
-	--text-intro: 0.9375rem; /* 15px*/
-	--text-section-heading: 1.625rem; /* 26px*/
 
-	/* Spacing */
+	/* Dimensions and shapes */
+
+	--content-max-width: 75rem;
+	--page-gutter: 1.5rem;
+	--bag-width: 22rem;
+	--dialog-max-width: 35rem;
+	--target-min-height: 2.75rem;
+	--button-min-height: 3rem;
+	--product-control-width: 10rem;
+	--radius-sm: 0.5rem;
+	--radius-img: 0.75rem;
+	--radius-panel: 1rem;
+	--radius-dialog: 1.25rem;
+	--radius-pill: 999px;
+
+	/* Recurring responsive spacing */
+
+	--header-padding-block: 1rem;
+	--intro-padding-top: 2rem;
+	--intro-margin-bottom: 2.5rem;
+	--footer-margin-top: 3rem;
+	--dialog-padding: 1.5rem;
+
+	/* Page Layout */
+
+	--item-gap: 0.75rem; /* 12px */
+	--header-divider: 2rem; /* 32px */
+	--eyebrow-text: 1rem;
+	--product-rows: 2.5rem; /* 40px */
+	--catalog-bag: 2rem; /* 32px */
+	--content-footer-divider: 3rem; /* 48px */
+	--footer-padding-block: 1.5rem; /* 24px */
+	--bag-padding: 1.5rem; /* 24px */
+	--bag-contents: 1.5rem; /* 24px */
+	--cart-line-block: 1rem;
+	--cart-details: 0.5rem;
+	--cart-list-total: 1.5rem;
+	--total-note: 1rem;
+	--btn-confirm-note: 1rem;
+	--dialog-internal: 1.5rem;
+	--dialog-blocks: 1.5rem;
+
+	/* Spacing scale */
 
 	--space-4px: 0.25rem;
 	--space-8px: 0.5rem;
@@ -45,14 +93,39 @@
 	--space-32px: 2rem;
 	--space-48px: 3rem;
 	--space-64px: 4rem;
+
+	/* Additional custom properties */
+
+	--text-header-caption: 0.75rem; /* 12px */
+	--text-eyebrow: 0.75rem; /* 12px */
+	--text-cart-name: 0.875rem; /* 14px */
+	--text-cart-detail: 0.8125rem; /* 13px */
+	--text-total-label: 0.875rem; /* 14px */
+	--text-total-amount: 1.75rem; /* 28px */
+	--backdrop: rgb(16 28 48 / 55%);
 }
 
 @media (width >= 600px) {
 	:root {
 		--text-brand: 1.375rem; /* 22px */
-		--text-main-heading: 3.5rem; /* 56px */
 		--text-dialog-heading: 2.5rem; /* 40px */
 		--text-intro: 1rem; /* 16px*/
 		--text-section-heading: 1.75rem; /* 28px*/
+		--text-dialog-heading: 2.5rem; /* 40px */
+		--header-padding-block: 2rem;
+		--footer-margin-top: 4rem;
+		--content-footer-divider: 3rem;
+		--dialog-internal: 2rem;
+		--page-gutter: 2rem;
+		--intro-padding-top: 3rem;
+		--intro-margin-bottom: 3rem;
+		--text-dialog-heading: 2.5rem; /* 40px */
+		--text-main-heading: 3.5rem; /* 56px */
+	}
+}
+
+@media (width >= 1100px) {
+	:root {
+		--page-gutter: 2rem; /* 32px */
 	}
 }

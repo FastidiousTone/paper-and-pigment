@@ -1,14 +1,154 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml">
-    <title>Paper &amp; Pigment | Art supplies</title>
-  </head>
-  <body>
-    <!-- Build your semantic page structure here. Start with the header. -->
-    <h1>Paper &amp; Pigment</h1>
-    <script type="module" src="/src/js/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml">
+  <title>Paper &amp; Pigment | Art supplies</title>
+</head>
+
+<body>
+
+  <header class="container">
+    <div class="header-content">
+      <a class="logo" href="index.html" aria-current="page">Paper &amp; Pigment</a>
+      <p class="header-caption">Supplies for your next idea</p>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="container">
+
+      <section id="intro">
+        <p class="eyebrow-text">Good tools. Room to play.</p>
+        <h1 class="intro-title">Make something yours.</h1>
+        <p class="intro-description">Thoughtful tools for sketching, painting, and the ideas in between.</p>
+      </section>
+
+      <section id="collection">
+
+        <div class="shop-layout">
+
+          <div>
+            <div class="collection-header">
+              <h2>The Everyday collection</h2>
+              <p class="collection-caption">6 creative essentials</p>
+            </div>
+
+            <ul class="product-grid">
+
+              <!-- <li class="product-card">
+                <div class="product-media">
+                  <img src="/images/markers.png"
+                    alt="Six cream-bodied markers with green, peach, lavender, and blue caps">
+                  <button class="btn btn--pill product-media-btn" type="button">Add to bag</button>
+                </div>
+                <p class="product-category">Markers</p>
+                <h3 class="product-name">Botanical marker set</h3>
+                <p class="product-price">$24.00</p>
+              </li> -->
+
+              <li class="product-card">
+                <div class="product-media">
+                  <img src="/images/markers.png"
+                    alt="Six cream-bodied markers with green, peach, lavender, and blue caps">
+                  <div class="quantity-control">
+                    <button class="btn btn--icon" type="button" aria-label="decrease quantity">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                        stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14" aria-hidden="true" />
+                      </svg>
+                    </button>
+                    <span class="quantity-count" data-count="">0</span>
+                    <button class="btn btn--icon" type="button" aria-label="increase quantity">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                        stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 5v14M5 12h14" aria-hidden="true" />
+                      </svg>
+                    </button>
+                  </div>
+
+                </div>
+                <p class="product-category">Markers</p>
+                <h3 class="product-name">Botanical marker set</h3>
+                <p class="product-price">$24.00</p>
+              </li>
+
+              <li class="product-card">
+                <div class="product-media">
+                  <img src="/images/sketchbook.png"
+                    alt="Blue spiral sketchbook with an abstract cream and orange cover design">
+                  <button class="btn btn--pill product-media-btn" type="button">Add to bag</button>
+                </div>
+                <p class="product-category">Paper</p>
+                <h3 class="product-name">Everyday sketchbook</h3>
+                <p class="product-price">$18.00</p>
+              </li>
+
+              <li class="product-card">
+                <div class="product-media">
+                  <img src="/images/gouache.png" alt="Open cream paint tin containing six colorful gouache pans">
+                  <button class="btn btn--pill product-media-btn" type="button">Add to bag</button>
+                </div>
+                <p class="product-category">Paint</p>
+                <h3 class="product-name">Studio gouache palette</h3>
+                <p class="product-price">$32.00</p>
+              </li>
+
+              <li class="product-card">
+                <div class="product-media">
+                  <img src="/images/pencils.png"
+                    alt="Five sharpened pencils with terracotta, mustard, and dark blue barrels">
+                  <button class="btn btn--pill product-media-btn" type="button">Add to bag</button>
+                </div>
+                <p class="product-category">Drawing</p>
+                <h3 class="product-name">Drawing pencil collection</h3>
+                <p class="product-price">$16.00</p>
+              </li>
+
+              <li class="product-card">
+                <div class="product-media">
+                  <img src="/images/tape.png" alt="Three patterned washi tape rolls in lavender, peach, and blue">
+                  <button class="btn btn--pill product-media-btn" type="button">Add to bag</button>
+                </div>
+                <p class="product-category">Accessories</p>
+                <h3 class="product-name">Color study washi tape</h3>
+                <p class="product-price">$8.00</p>
+
+              </li>
+              <li class="product-card">
+                <div class="product-media">
+                  <img src="/images/brushes.png"
+                    alt="Three pointed paintbrushes with green and terracotta handles and copper-colored ferrules">
+                  <button class="btn btn--pill product-media-btn" type="button">Add to bag</button>
+                </div>
+                <p class="product-category">Tools</p>
+                <h3 class="product-name">Detail brush trio</h3>
+                <p class="product-price">$22.00</p>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="cart">
+            <h2>Your bag <span class="bag-items">(0)</span></h2>
+            <img src="/icons/bag.svg" alt="">
+            <h3>A little inspiration starts here.</h3>
+            <p>Add a favorite to begin your next project.</p>
+          </div>
+
+        </div>
+      </section>
+
+  </main>
+
+  <footer class="container">
+    <p>A practice shop. No real orders or payments.</p>
+  </footer>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+
 </html>

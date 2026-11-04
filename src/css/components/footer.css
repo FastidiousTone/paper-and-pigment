@@ -1,0 +1,4 @@
+footer {
+	margin-top: var(--footer-margin-top);
+	border-top: 2px solid var(--border);
+}

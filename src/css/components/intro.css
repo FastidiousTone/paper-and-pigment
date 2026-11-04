@@ -1,0 +1,33 @@
+#intro {
+	padding-top: var(--space-8px);
+	margin-bottom: var(--intro-margin-bottom);
+}
+
+.eyebrow-text {
+	color: var(--accent);
+	font-weight: var(--weight-bold);
+	font-size: var(--text-eyebrow);
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	margin-bottom: var(--space-16px);
+}
+
+.intro-title {
+	color: var(--ink);
+	font-size: var(--text-main-heading);
+	margin-bottom: var(--space-16px);
+	font-weight: var(--weight-regular);
+	font-family: var(--font-heading);
+	line-height: 1.15;
+	letter-spacing: normal;
+	max-width: none;
+}
+
+.intro-description {
+	color: var(--muted);
+	font-weight: var(--weight-regular);
+	line-height: 1.6;
+	max-width: 65ch;
+	font-size: var(--text-intro);
+}

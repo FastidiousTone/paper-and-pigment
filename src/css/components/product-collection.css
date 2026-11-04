@@ -1,0 +1,145 @@
+#collection {
+	margin-bottom: var(--space-48px);
+}
+
+.shop-layout {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: var(--space-24px);
+	align-items: start;
+	margin: 0;
+	padding: 0;
+}
+
+.collection-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	flex-wrap: wrap;
+	gap: var(--item-gap);
+	margin-bottom: var(--space-24px);
+	padding: 0;
+	font-family: var(--font-heading);
+	font-weight: var(--weight-regular);
+}
+
+.collection-header > h2 {
+	font-size: var(--text-section-heading);
+}
+
+.collection-caption {
+	font-family: var(--font-body);
+	font-size: var(--text-header-caption);
+	line-height: 1.5;
+	color: var(--muted);
+}
+
+.product-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	column-gap: var(--space-24px);
+	row-gap: var(--product-rows);
+	align-items: center;
+}
+
+.product-card {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.product-media {
+	position: relative;
+	margin-bottom: 2.5rem;
+	/* border-radius: 12px; */
+	overflow: visible;
+}
+
+.product-media > img {
+	aspect-ratio: 4/3;
+	object-fit: cover;
+	border-radius: var(--radius-img);
+	margin: 0;
+	padding: 0;
+}
+
+/* .product-media::selection > img {
+	outline: 2ps solid var(--primary);
+} */
+
+.product-media-btn {
+	position: absolute;
+	left: 50%;
+	bottom: -24px;
+	transform: translateX(-50%);
+	min-width: 9rem;
+	z-index: 1;
+}
+
+.product-media-btn:hover {
+	/* Remember in DevTools, the hover effect will not work in responsive mode. */
+	background-color: var(--soft);
+	border-color: var(--primary);
+	color: var(--primary);
+}
+
+.product-category {
+	font-size: var(--text-product-category);
+	font-weight: var(--weight-regular);
+	color: var(--muted);
+	line-height: 1.5;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	margin-bottom: var(--space-8px);
+}
+
+.product-name {
+	font-size: var(--text-product-name);
+	line-height: 1.4;
+	font-weight: var(--weight-bold);
+	margin-bottom: var(--space-4px);
+}
+
+.product-price {
+	font-size: var(--text-product-price);
+	color: var(--primary);
+	font-weight: var(--weight-bold);
+	line-height: 1.4;
+}
+
+.quantity-control {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	min-height: var(--button-min-height);
+	color: var(--on-primary);
+	background-color: var(--primary);
+	border-radius: var(--radius-pill);
+	/* border: 1px solid var(--border); */
+	position: absolute;
+	left: 50%;
+	bottom: -24px;
+	transform: translateX(-50%);
+	min-width: 9rem;
+	z-index: 1;
+}
+
+@media (width < 600px) {
+	.collection-caption {
+		display: none;
+	}
+
+	.product-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.shop-layout {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (width >= 600px) and (width <= 1099px) {
+	.product-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}

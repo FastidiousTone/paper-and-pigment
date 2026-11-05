@@ -133,19 +133,16 @@
 	.product-grid {
 		grid-template-columns: 1fr;
 	}
+}
 
+@media (width < 1100px) {
 	.shop-layout {
 		grid-template-columns: 1fr;
 	}
 }
 
-@media (width >= 600px) and (width <= 1099px) {
+@media (width >= 600px) and (width < 1100px) {
 	.product-grid {
-		grid-template-columns: 2fr 2fr;
-	}
-
-	.cart {
-		grid-column-start: 1;
-		grid-column-end: 3;
+		grid-template-columns: 1fr 1fr;
 	}
 }

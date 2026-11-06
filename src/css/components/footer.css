@@ -1,4 +1,8 @@
-footer {
-	margin-top: var(--footer-margin-top);
-	border-top: 2px solid var(--border);
+.footer-disclaimer {
+	border-top: 1px solid var(--border);
+	padding-block: var(--space-24px);
+	font-size: var(--text-note);
+	font-weight: var(--weight-semibold);
+	line-height: 1.5;
+	color: var(--muted);
 }

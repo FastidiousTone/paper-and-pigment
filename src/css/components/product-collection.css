@@ -115,7 +115,6 @@
 	color: var(--on-primary);
 	background-color: var(--primary);
 	border-radius: var(--radius-pill);
-	/* border: 1px solid var(--border); */
 	position: absolute;
 	left: 50%;
 	bottom: -24px;

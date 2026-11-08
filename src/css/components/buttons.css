@@ -8,7 +8,6 @@
 	font-weight: var(--weight-bold);
 	align-items: center;
 	justify-content: center;
-	padding: 12px 20px;
 	border: 1px solid transparent;
 	font-family: var(--font-body);
 	text-align: center;
@@ -21,6 +20,7 @@
 	color: var(--primary);
 	border-radius: var(--radius-pill);
 	border: 1px solid var(--border);
+	padding: 12px 20px;
 }
 
 .btn--icon {
@@ -34,4 +34,25 @@
 
 .btn--icon:hover {
 	background-color: var(--primary-hover);
+}
+
+.bag-close-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	border: none;
+	min-width: 44px;
+	min-height: 44px;
+	color: var(--muted);
+}
+
+.bag-close-icon:hover {
+	border-radius: 50%;
+	background-color: var(--soft);
+	color: var(--ink);
+}
+
+.bag-close-icon:focus {
+	border-radius: 50%;
 }

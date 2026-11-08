@@ -33,7 +33,7 @@
 
           <div>
             <div class="collection-header">
-              <h2>The Everyday collection</h2>
+              <h2>The everyday collection</h2>
               <p class="collection-caption">6 creative essentials</p>
             </div>
 
@@ -80,7 +80,8 @@
                 <div class="product-media">
                   <img src="/images/sketchbook.png"
                     alt="Blue spiral sketchbook with an abstract cream and orange cover design">
-                  <button class="btn btn--pill product-media-btn" type="button">Add to bag</button>
+                  <button data-action="add-to-bag" class="btn btn--pill product-media-btn" type="button">Add to
+                    bag</button>
                 </div>
                 <p class="product-category">Paper</p>
                 <h3 class="product-name">Everyday sketchbook</h3>
@@ -148,9 +149,122 @@
             </div>
           </div>
 
+          <!-- <div class="cart">
+            <h2 class="bag-heading">Your bag <span class="bag-count">(3)</span></h2>
+
+            <ul class="bag-list">
+              <li class="bag-item">
+                <p class="item-name">Botanical marker set</p>
+                <div class="item-info">
+                  <div class="item-description">
+                    <p class="item-count">2x</p>
+                    <p class="item-price">@ $24.00</p>
+                    <p class="item-subtotal">$48.00</p>
+                  </div>
+                  <button type="button" class="bag-close-icon" aria-label="Remove Botanical marker set">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16"
+                      height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="m6 6 12 12M18 6 6 18" />
+                    </svg>
+                  </button>
+                </div>
+              </li>
+
+              <li class="bag-item">
+                <p class="item-name">Everyday sketchbook</p>
+                <div class="item-info">
+                  <div class="item-description">
+                    <p class="item-count">1x</p>
+                    <p class="item-price">@ $18.00</p>
+                    <p class="item-subtotal">$18.00</p>
+                  </div>
+
+                  <button type="button" class="bag-close-icon" aria-label="Remove everyday sketchbook">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16"
+                      height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="m6 6 12 12M18 6 6 18" />
+                    </svg>
+                  </button>
+
+                </div>
+              </li>
+            </ul>
+            <div class="order-description">
+              <p class="order-title">Order total</p>
+              <p class="order-total">$66.00</p>
+            </div>
+            <div class="cart-support-note">
+              <p>
+                Carefully chosen. Ready for your next idea.
+              </p>
+            </div>
+
+            <button type="button" class="confirm-order"><span class="order-btn-text">Confirm order</span></button>
+
+          </div> -->
+
         </div>
       </section>
 
+      <dialog class="dialog-panel" aria-labelledby="order-confirmation-title">
+        <div class="dialog-icons">
+          <div class="bg-circle">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+              fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m5 12 4 4L19 6" />
+            </svg>
+
+          </div>
+          <div class="dialog-close-btn">
+            <button type="button" class="bag-close-icon" aria-label="Close order confirmation">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m6 6 12 12M18 6 6 18" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <h2 id="order-confirmation-title" class="dialog-heading">A good start.</h2>
+        <p class="dialog-demo">Demo order confirmed. No payment was taken and no order was sent.</p>
+        <h3 class="dialog-subheading">Your creative essentials</h3>
+        <div class="order-summary-panel">
+          <ul>
+            <li class="order-summary-item">
+              <img class="item-thumbnail" src="/public/images/markers.png"
+                alt="Six cream-bodied markers with green, peach, lavender, and blue caps">
+              <div class="summary-item-description">
+                <h3 class="summary-product-name">Botanical marker set</h3>
+                <div class="inline-flex">
+                  <p class="summary-quantity">2x</p>
+                  <p class="summary-unit-price">@ $24.00</p>
+                </div>
+                <p class="summary-items-subtotal">$48.00</p>
+              </div>
+            </li>
+
+            <li class="order-summary-item">
+              <img class="item-thumbnail" src="/public/images/sketchbook.png"
+                alt="Blue spiral sketchbook with an abstract cream and orange cover design">
+              <div class="summary-item-description">
+                <h3 class="summary-product-name">Everyday sketchbook</h3>
+                <div class="inline-flex">
+                  <p class="summary-quantity">1x</p>
+                  <p class="summary-unit-price">@ $18.00</p>
+                </div>
+                <p class="summary-items-subtotal">$18.00</p>
+              </div>
+            </li>
+          </ul>
+          <div class="dialog-order-info">
+            <p class="dialog-order-label">Order total</p>
+            <p class="dialog-order-total">$66.00</p>
+          </div>
+        </div>
+        <button type="button" class="confirm-order"><span class="order-btn-text">Start new order</span></button>
+        <!-- <button type="submit">Start new order</button> -->
+      </dialog>
   </main>
 
   <footer class="container">

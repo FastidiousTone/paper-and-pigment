@@ -53,6 +53,17 @@
 	line-height: 1.5;
 }
 
+.bag-list {
+	list-style: none;
+	margin-bottom: var(--space-24px);
+	margin-top: 0;
+}
+
+.bag-item {
+	padding-block: var(--space-16px);
+	border-bottom: 1px solid var(--border);
+}
+
 @media (width < 1100px) {
 	.cart {
 		margin-top: 0;

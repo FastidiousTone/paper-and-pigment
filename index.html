@@ -43,7 +43,25 @@
                 <div class="product-media">
                   <img src="/images/markers.png"
                     alt="Six cream-bodied markers with green, peach, lavender, and blue caps">
-                  <button class="btn btn--pill product-media-btn" type="button">Add to bag</button>
+                  <button data-action="add-to-bag" class="btn btn--pill product-media-btn" type="button">Add to
+                    bag</button>
+                  <div class="quantity-control">
+                    <button class="btn btn--icon" type="button" aria-label="decrease quantity">
+                      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                      </svg>
+                    </button>
+                    <span class="quantity-count" data-count="">0</span>
+                    <button class="btn btn--icon" type="button" aria-label="increase quantity">
+                      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M12 5v14M5 12h14" />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
                 <p class="product-category">Markers</p>
                 <h3 class="product-name">Botanical marker set</h3>
@@ -80,7 +98,7 @@
                 <div class="product-media">
                   <img src="/images/sketchbook.png"
                     alt="Blue spiral sketchbook with an abstract cream and orange cover design">
-                  <button data-action="add-to-bag" class="btn btn--pill product-media-btn" type="button">Add to
+                  <button class="btn btn--pill product-media-btn" type="button">Add to
                     bag</button>
                 </div>
                 <p class="product-category">Paper</p>
@@ -232,7 +250,7 @@
         <div class="order-summary-panel">
           <ul>
             <li class="order-summary-item">
-              <img class="item-thumbnail" src="/public/images/markers.png"
+              <img class="item-thumbnail" src="/images/markers.png"
                 alt="Six cream-bodied markers with green, peach, lavender, and blue caps">
               <div class="summary-item-description">
                 <h3 class="summary-product-name">Botanical marker set</h3>
@@ -245,7 +263,7 @@
             </li>
 
             <li class="order-summary-item">
-              <img class="item-thumbnail" src="/public/images/sketchbook.png"
+              <img class="item-thumbnail" src="/images/sketchbook.png"
                 alt="Blue spiral sketchbook with an abstract cream and orange cover design">
               <div class="summary-item-description">
                 <h3 class="summary-product-name">Everyday sketchbook</h3>

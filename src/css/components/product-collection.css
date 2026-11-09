@@ -124,6 +124,14 @@
 	gap: 1.125rem;
 }
 
+.quantity-control[hidden] {
+	display: none;
+}
+
+button[data-action='add-to-bag'][hidden] {
+	display: none;
+}
+
 @media (width < 600px) {
 	.collection-caption {
 		display: none;

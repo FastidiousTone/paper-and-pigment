@@ -39,14 +39,14 @@
 
             <ul class="product-grid">
 
-              <li class="product-card">
+              <li class="product-card" data-product-id="markers">
                 <div class="product-media">
                   <img src="/images/markers.png"
                     alt="Six cream-bodied markers with green, peach, lavender, and blue caps">
                   <button data-action="add-to-bag" class="btn btn--pill product-media-btn" type="button">Add to
                     bag</button>
                   <div class="quantity-control">
-                    <button class="btn btn--icon" type="button" aria-label="decrease quantity">
+                    <button data-action="decrease" class="btn btn--icon" type="button" aria-label="decrease quantity">
                       <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
                         height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                         stroke-linejoin="round">
@@ -54,7 +54,7 @@
                       </svg>
                     </button>
                     <span class="quantity-count" data-count="">0</span>
-                    <button class="btn btn--icon" type="button" aria-label="increase quantity">
+                    <button data-action="increase" class="btn btn--icon" type="button" aria-label="increase quantity">
                       <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
                         height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                         stroke-linejoin="round">
@@ -68,80 +68,143 @@
                 <p class="product-price">$24.00</p>
               </li>
 
-              <!-- <li class="product-card">
-                <div class="product-media">
-                  <img src="/images/markers.png"
-                    alt="Six cream-bodied markers with green, peach, lavender, and blue caps">
-                  <div class="quantity-control">
-                    <button class="btn btn--icon" type="button" aria-label="decrease quantity">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
-                        stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 12h14" aria-hidden="true" />
-                      </svg>
-                    </button>
-                    <span class="quantity-count" data-count="">0</span>
-                    <button class="btn btn--icon" type="button" aria-label="increase quantity">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
-                        stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 5v14M5 12h14" aria-hidden="true" />
-                      </svg>
-                    </button>
-                  </div>
-
-                </div>
-                <p class="product-category">Markers</p>
-                <h3 class="product-name">Botanical marker set</h3>
-                <p class="product-price">$24.00</p>
-              </li> -->
-
-              <li class="product-card">
+              <li class="product-card" data-product-id="sketchbook">
                 <div class="product-media">
                   <img src="/images/sketchbook.png"
                     alt="Blue spiral sketchbook with an abstract cream and orange cover design">
-                  <button class="btn btn--pill product-media-btn" type="button">Add to
+                  <button data-action="add-to-bag" class="btn btn--pill product-media-btn" type="button">Add to
                     bag</button>
+                  <div class="quantity-control">
+                    <button data-action="decrease" class="btn btn--icon" type="button" aria-label="decrease quantity">
+                      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                      </svg>
+                    </button>
+                    <span class="quantity-count" data-count="">0</span>
+                    <button data-action="increase" class="btn btn--icon" type="button" aria-label="increase quantity">
+                      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M12 5v14M5 12h14" />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
                 <p class="product-category">Paper</p>
                 <h3 class="product-name">Everyday sketchbook</h3>
                 <p class="product-price">$18.00</p>
               </li>
 
-              <li class="product-card">
+              <li class="product-card" data-product-id="paint">
                 <div class="product-media">
                   <img src="/images/gouache.png" alt="Open cream paint tin containing six colorful gouache pans">
-                  <button class="btn btn--pill product-media-btn" type="button">Add to bag</button>
+                  <button data-action="add-to-bag" class="btn btn--pill product-media-btn" type="button">Add to
+                    bag</button>
+                  <div class="quantity-control">
+                    <button data-action="decrease" class="btn btn--icon" type="button" aria-label="decrease quantity">
+                      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                      </svg>
+                    </button>
+                    <span class="quantity-count" data-count="">0</span>
+                    <button data-action="increase" class="btn btn--icon" type="button" aria-label="increase quantity">
+                      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M12 5v14M5 12h14" />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
                 <p class="product-category">Paint</p>
                 <h3 class="product-name">Studio gouache palette</h3>
                 <p class="product-price">$32.00</p>
               </li>
 
-              <li class="product-card">
+              <li class="product-card" data-product-id="drawing">
                 <div class="product-media">
                   <img src="/images/pencils.png"
                     alt="Five sharpened pencils with terracotta, mustard, and dark blue barrels">
-                  <button class="btn btn--pill product-media-btn" type="button">Add to bag</button>
+                  <button data-action="add-to-bag" class="btn btn--pill product-media-btn" type="button">Add to
+                    bag</button>
+                  <div class="quantity-control">
+                    <button data-action="decrease" class="btn btn--icon" type="button" aria-label="decrease quantity">
+                      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                      </svg>
+                    </button>
+                    <span class="quantity-count" data-count="">0</span>
+                    <button data-action="increase" class="btn btn--icon" type="button" aria-label="increase quantity">
+                      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M12 5v14M5 12h14" />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
                 <p class="product-category">Drawing</p>
                 <h3 class="product-name">Drawing pencil collection</h3>
                 <p class="product-price">$16.00</p>
               </li>
 
-              <li class="product-card">
+              <li class="product-card" data-product-id="accessories">
                 <div class="product-media">
                   <img src="/images/tape.png" alt="Three patterned washi tape rolls in lavender, peach, and blue">
-                  <button class="btn btn--pill product-media-btn" type="button">Add to bag</button>
+                  <button data-action="add-to-bag" class="btn btn--pill product-media-btn" type="button">Add to
+                    bag</button>
+                  <div class="quantity-control">
+                    <button data-action="decrease" class="btn btn--icon" type="button" aria-label="decrease quantity">
+                      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                      </svg>
+                    </button>
+                    <span class="quantity-count" data-count="">0</span>
+                    <button data-action="increase" class="btn btn--icon" type="button" aria-label="increase quantity">
+                      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M12 5v14M5 12h14" />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
                 <p class="product-category">Accessories</p>
                 <h3 class="product-name">Color study washi tape</h3>
                 <p class="product-price">$8.00</p>
 
               </li>
-              <li class="product-card">
+              <li class="product-card" data-product-id="tools">
                 <div class="product-media">
                   <img src="/images/brushes.png"
                     alt="Three pointed paintbrushes with green and terracotta handles and copper-colored ferrules">
-                  <button class="btn btn--pill product-media-btn" type="button">Add to bag</button>
+                  <button data-action="add-to-bag" class="btn btn--pill product-media-btn" type="button">Add to
+                    bag</button>
+                  <div class="quantity-control">
+                    <button data-action="decrease" class="btn btn--icon" type="button" aria-label="decrease quantity">
+                      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                      </svg>
+                    </button>
+                    <span class="quantity-count" data-count="">0</span>
+                    <button data-action="increase" class="btn btn--icon" type="button" aria-label="increase quantity">
+                      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M12 5v14M5 12h14" />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
                 <p class="product-category">Tools</p>
                 <h3 class="product-name">Detail brush trio</h3>

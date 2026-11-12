@@ -97,3 +97,100 @@ addToBag.addEventListener('click', () => {
 	console.log(product.quantity);
 });
 ```
+
+```js
+import '../css/styles.css';
+
+// variables
+
+const addToBag = document.querySelector('[data-action="add-to-bag"]');
+
+const increaseButton = document.querySelector('[data-action="increase"]');
+
+const decreaseButton = document.querySelector('[data-action="decrease"]');
+
+const quantityCount = document.querySelector('.quantity-count');
+
+const quantityControl = document.querySelector('.quantity-control');
+
+// const product = {
+// 	id: 'markers',
+// 	name: 'Botanical marker set',
+// 	priceCents: 2400,
+// 	quantity: 0,
+// };
+
+const product = {
+	id: 'markers',
+	name: 'Botanical marker set',
+	priceCents: 2400,
+	quantity: 0,
+};
+
+const products = [
+	{
+		id: 'markers',
+		name: 'Botanical marker set',
+		priceCents: 2400,
+		quantity: 0,
+	},
+	{
+		id: 'sketchbook',
+		name: 'Everyday sketchbook',
+		priceCents: 1800,
+		quantity: 0,
+	},
+];
+
+console.log(products[0]);
+
+// Event Listeners
+
+addToBag.addEventListener('click', () => {
+	product.quantity += 1;
+	updateProductDisplay();
+});
+
+// Increase button
+increaseButton.addEventListener('click', () => {
+	product.quantity += 1;
+	quantityCount.textContent = product.quantity;
+});
+
+updateProductDisplay();
+
+// Decrease button
+decreaseButton.addEventListener('click', () => {
+	product.quantity -= 1;
+	quantityCount.textContent = product.quantity;
+
+	// if (product.quantity === 0) {
+	// 	addToBag.hidden = false;
+	// 	quantityControl.hidden = true;
+	// }
+});
+
+updateProductDisplay();
+
+// Functions
+
+function updateProductDisplay() {
+	quantityCount.textContent = product.quantity;
+	if (product.quantity === 0) {
+		addToBag.hidden = false;
+		quantityControl.hidden = true;
+	} else {
+		addToBag.hidden = true;
+		quantityControl.hidden = false;
+	}
+}
+
+// callbacks
+
+updateProductDisplay();
+
+// Outside the listener: sets the initial appearance on page load.
+
+addToBag.hidden = false;
+quantityControl.hidden = true;
+```

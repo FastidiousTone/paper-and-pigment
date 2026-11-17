@@ -124,11 +124,11 @@
 	gap: 1.125rem;
 }
 
-.quantity-control[hidden] {
-	display: none;
-}
-
-button[data-action='add-to-bag'][hidden] {
+.quantity-control[hidden],
+.bag-content[hidden],
+button[data-action='add-to-bag'][hidden],
+.confirm-order[hidden],
+.order-description[hidden] {
 	display: none;
 }
 

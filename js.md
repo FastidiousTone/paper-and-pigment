@@ -194,3 +194,18 @@ updateProductDisplay();
 addToBag.hidden = false;
 quantityControl.hidden = true;
 ```
+
+```js
+// Here’s the Intl.NumberFormat version. It uses the same locale and currency options you already wrote, but lets you create the formatter once and reuse it.
+
+// Outside renderBagItems(), near your other constants, create the formatter:
+const usdFormatter = new Intl.NumberFormat('en-US', {
+	style: 'currency',
+	currency: 'USD',
+});
+
+// Inside your loop, replace your current formattedSubtotal declaration with:
+const formattedSubtotal = usdFormatter.format(subtotalCents / 100);
+
+// The first block sets the formatting rules. The second applies them to each row’s subtotal: 7200 cents becomes 72 dollars, then .format() returns the string "$72.00". You can reuse usdFormatter later for the unit price and order total.
+```

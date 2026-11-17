@@ -208,19 +208,30 @@
                 </div>
                 <p class="product-category">Tools</p>
                 <h3 class="product-name">Detail brush trio</h3>
-                <p class="product-price">$22.00</p>
+                <p class="product-price">$<span class="price-cents">22.00</span></p>
               </li>
 
             </ul>
           </div>
 
           <div class="cart">
-            <h2 class="bag-heading">Your bag <span class="bag-items">(0)</span></h2>
+            <h2 class="bag-heading">Your bag (<span class="bag-items">0</span>)</h2>
+            <ul class="bag-list"></ul>
+            <!-- Added for this step -->
+            <div class="order-description" hidden>
+              <p class="order-title">Order total</p>
+              <p class="order-total">$0.00</p>
+            </div>
+            <!-- The button will go immediately after the closing </div> for .order-description, still inside the live bag container and outside .bag-list. That makes it a sibling of the order total block. -->
+            <button type="button" class="confirm-order" hidden><span class="order-btn-text">Confirm
+                order</span></button>
+            <p class="order-status" role="status"></p>
             <div class="bag-content">
               <div class="bag-icon-wrapper">
-                <svg class="bag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
-                  fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 7h14l1 14H4L5 7Z" aria-hidden="true" />
+                <svg aria-hidden="true" class="bag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                  width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M5 7h14l1 14H4L5 7Z" />
                   <path d="M8 8V6a4 4 0 0 1 8 0v2" />
                 </svg>
               </div>
